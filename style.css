@@ -1,0 +1,88 @@
+.path-panel {
+    background-color: #292929;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.ports {
+    background-color: #636363;
+    width: 1920;
+    height: 180px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bordered {
+    border-top: rgb(0, 0, 0) solid 5px;
+    border-bottom: rgb(0, 0, 0) solid 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    background-image: url('./port-2.jpg');
+    background-size: cover;
+    margin: 7px;
+    -webkit-transition: all 0.5s ease;
+    /* Safari and Chrome */
+    -moz-transition: all 0.5s ease;
+    /* Firefox */
+    -ms-transition: all 0.5s ease;
+    /* IE 9 */
+    -o-transition: all 0.5s ease;
+    /* Opera */
+    transition: all 0.5s ease;
+    border-radius: 2px;
+    background-color: #292929;
+}
+
+.tile:hover {
+    -webkit-transform: scale(1.25);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* IE 9 */
+    -o-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
+}
+
+.block {
+    padding-right: 10px;
+}
+
+.top {
+    margin-bottom: 5px;
+}
+
+.bottom {
+    margin-top: 5px;
+}
+
+.ports::-webkit-scrollbar {
+    width: 7px;
+    /* ширина scrollbar */
+}
+
+.ports::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    /* цвет дорожки */
+}
+
+.ports::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 85, 85);
+    /* цвет плашки */
+    border-radius: 10px;
+    /* закругления плашки */
+    border: 1px solid rgb(0, 0, 0);
+    /* padding вокруг плашки */
+}
+.linked{
+    background-color: green;
+}
